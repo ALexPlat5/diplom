@@ -1,0 +1,57 @@
+.main {
+    margin: 0 20px 0 20px;
+    padding: 0;
+    max-width: 1500px;
+    width: 1500px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    /*del border*/
+    /* border: 1px solid black; */
+}
+
+.mainNav {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5px;
+    background-color: #f8f8f8d3;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.content {
+    padding-top: 10px;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+
+.content h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    right: 30px;
+    flex-direction: column;
+    align-items: end;
+    background-color: white;
+    width: auto;
+    z-index: 1;
+  }
+
+.dropdownContent a {
+    padding: 10px 10px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+
+.dropdown:hover .dropdownContent {
+   display: flex; 
+}   
